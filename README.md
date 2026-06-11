@@ -59,3 +59,8 @@ variable with `--password-env`.
 
 The metadata contains no mnemonic, derived private seed, BIP-39 passphrase, or
 secret-key password.
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 only
+(`GPL-3.0-only`). See [LICENSE](LICENSE).
