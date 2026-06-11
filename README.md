@@ -28,7 +28,7 @@ mvn verify
 The executable JAR is:
 
 ```text
-club.dwdc.keyexporter.cli/target/club.dwdc.keyexporter.cli-0.1.0-SNAPSHOT.jar
+club.dwdc.keyexporter.cli/target/club.dwdc.keyexporter.cli-0.1.0.jar
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ club.dwdc.keyexporter.cli/target/club.dwdc.keyexporter.cli-0.1.0-SNAPSHOT.jar
 Create authoritative OpenPGP metadata:
 
 ```sh
-java -jar club.dwdc.keyexporter.cli/target/club.dwdc.keyexporter.cli-0.1.0-SNAPSHOT.jar \
+java -jar club.dwdc.keyexporter.cli/target/club.dwdc.keyexporter.cli-0.1.0.jar \
   openpgp init \
   --name "Alice" \
   --email "alice@example.com" \
@@ -46,7 +46,7 @@ java -jar club.dwdc.keyexporter.cli/target/club.dwdc.keyexporter.cli-0.1.0-SNAPS
 Export a public key:
 
 ```sh
-java -jar club.dwdc.keyexporter.cli/target/club.dwdc.keyexporter.cli-0.1.0-SNAPSHOT.jar \
+java -jar club.dwdc.keyexporter.cli/target/club.dwdc.keyexporter.cli-0.1.0.jar \
   openpgp export \
   --metadata alice-openpgp.json \
   --mnemonic-file /secure/path/seed.txt \
@@ -59,4 +59,3 @@ variable with `--password-env`.
 
 The metadata contains no mnemonic, derived private seed, BIP-39 passphrase, or
 secret-key password.
-

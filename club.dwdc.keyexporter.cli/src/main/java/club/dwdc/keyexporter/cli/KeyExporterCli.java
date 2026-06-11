@@ -24,7 +24,7 @@ import java.util.concurrent.Callable;
 @Command(
         name = "keyexport",
         mixinStandardHelpOptions = true,
-        version = "0.1.0-SNAPSHOT",
+        version = "0.1.0",
         description = "Export deterministic keys from DWDC KeyVault.",
         subcommands = {KeyExporterCli.OpenPgpCommand.class})
 public final class KeyExporterCli implements Callable<Integer> {
@@ -222,4 +222,3 @@ public final class KeyExporterCli implements Callable<Integer> {
         }
     }
 }
-
