@@ -8,7 +8,7 @@
     <version>0.1.0</version>
     <packaging>pom</packaging>
 
-    <name>club.dwdc.keyexporter</name>
+    <name>keyexporter</name>
     <description>Protocol-specific key export tools for DWDC KeyVault.</description>
 
     <licenses>
