@@ -1,5 +1,13 @@
 # club.dwdc.keyexporter
 
+> **Retired (2026-11, keymaster-wks mission 48.4).** KeyVault 0.6.0
+> refuses private-key export for every algorithm it supports, and it
+> derives Ed25519 from its own SLIP-10 root. keyexporter can no
+> longer produce secret key rings, and the keys it derives on
+> keyvault 0.1.0 are not the ones KeyMaster 0.9.0 uses. OpenPGP keys
+> stay on the KeyMaster device; use KeyMaster to export public
+> certificates. This code may return as part of a test framework.
+
 Java 21 command-line exporters for deterministic keys derived by DWDC KeyVault.
 
 The initial OpenPGP profile creates:
